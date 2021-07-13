@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/vfnrqafmvcd5hoco?svg=true)](https://ci.appveyor.com/project/nionka/react-diplom)
+[![Build status](https://ci.appveyor.com/api/projects/status/pbm5f8mida0vcddl?svg=true)](https://ci.appveyor.com/project/nionka/react-diplom)
 
 # Интернет-магазин обуви
 
