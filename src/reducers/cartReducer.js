@@ -1,13 +1,15 @@
 import { UPDATE_CART } from "../actions/actionTypes"
 
+const extractCart = () => localStorage.cart ? JSON.parse(localStorage.getItem('cart')) : [];
+
 const initialState = {
-  products: localStorage.length !== 0 ? JSON.parse(localStorage.getItem('cart')) : []
+  products: extractCart()
 }
 
 function cartReducer(state = initialState, action) {
   switch (action.type) {
     case UPDATE_CART:
-      return { ...state, products:  localStorage.length !== 0 ? JSON.parse(localStorage.getItem('cart')) : [] }
+      return { ...state, products:  extractCart() }
     default:
       return state
   }
